@@ -217,7 +217,7 @@ const answerRowMinHeightClassNames = {
 } as const;
 
 export const getAnswerRowClassName = (minHeight: '5rem' | '5.5rem' = '5rem') =>
-  `flex ${answerRowMinHeightClassNames[minHeight]} w-full items-center border-b-4 border-(--border-color) px-2 pb-2 md:w-3/4 lg:w-2/3 xl:w-1/2`;
+  `flex ${answerRowMinHeightClassNames[minHeight]} w-full items-center border-b-3 border-(--border-color) px-2 pb-2 md:w-3/4 lg:w-2/3 xl:w-1/2`;
 
 export const getGlassModeClassName = (
   baseClassName: string,

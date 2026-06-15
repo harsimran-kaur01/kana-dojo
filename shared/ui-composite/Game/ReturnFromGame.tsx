@@ -27,7 +27,7 @@ import {
   Check,
   type LucideIcon,
 } from 'lucide-react';
-import ProgressBar from './ProgressBar';
+import GameScoreBar from './GameScoreBar';
 import { ActionButton } from '@/shared/ui/components/ActionButton';
 
 // Game mode icon configuration
@@ -202,14 +202,14 @@ const Return = ({ isHidden, gameMode, onQuit }: ReturnProps) => {
             className='text-(--border-color) duration-250 hover:scale-125 hover:cursor-pointer hover:text-(--secondary-color)'
           />
         </button>
-        <ProgressBar />
+        <GameScoreBar />
         {/* Stats button - visible only on small screens */}
         <ActionButton
           borderRadius='xl'
-          className='w-auto px-3 py-1 text-xl sm:hidden animate-float [--float-distance:-2px]'
+          className='w-auto px-2 py-1 text-xl sm:hidden animate-float [--float-distance:-1px]'
           onClick={handleShowStats}
         >
-          <ChartSpline size={24} />
+          <ChartSpline size={22} />
         </ActionButton>
       </div>
 
@@ -241,7 +241,7 @@ const Return = ({ isHidden, gameMode, onQuit }: ReturnProps) => {
                     setIsPopoverOpen(prev => !prev);
                   }
                 }}
-                className='rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--main-color)'
+                className='rounded-full hover:cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--main-color)'
               >
                 <span className='flex h-6 w-6 items-center justify-center rounded-lg bg-(--main-color) border-b-3 border-(--main-color-accent) ml-0.5 sm:ml-1 mt-0.5'>
                   <Check className='h-4 w-4 text-(--background-color)' />
@@ -279,7 +279,7 @@ const Return = ({ isHidden, gameMode, onQuit }: ReturnProps) => {
           <ActionButton
             borderRadius='2xl'
             borderBottomThickness={8}
-            className='hidden w-auto p-2 text-xl sm:flex md:px-6 animate-float [--float-distance:-4px]'
+            className='hidden w-auto py-2 text-xl sm:flex sm:px-6 animate-float [--float-distance:-3px]'
             onClick={handleShowStats}
           >
             <ChartSpline size={24} />

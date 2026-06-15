@@ -37,8 +37,14 @@
     "position": "bottom",
     "text": "- Additional community note preserved for documentation housekeeping.",
     "issued": true,
-    "completed": false,
-    "completedBy": "aqilaziz",
-    "completedPR": 16356
+    "completed": false
+  },
+  {
+    "id": 4,
+    "author": "Jota e João",
+    "note": "Aprender os Kanas primeiro e evitar focar no Romaji acelera muito a compreensão do idioma!",
+    "dateAdded": "2026-06-08",
+    "issued": false,
+    "completed": false
   }
 ]

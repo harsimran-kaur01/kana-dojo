@@ -42,7 +42,7 @@ export function SelectedLevelsCard({
   const label = fullLabel ?? compactLabel;
 
   return (
-    <div className='rounded-xl bg-(--card-color) p-4'>
+    <div className='rounded-xl bg-(--card-color) p-4 font-inherit'>
       <div className='flex flex-col gap-2'>
         <div className='flex flex-row items-center gap-2'>
           <div className='flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 border-(--secondary-color) bg-(--secondary-color)'>
