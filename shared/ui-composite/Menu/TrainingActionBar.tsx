@@ -335,7 +335,8 @@ const TrainingActionBar: React.FC<ITopBarProps> = ({
                         id === 'classic'
                           ? 'w-full sm:w-3/4 md:w-1/2 md:max-w-sm md:px-6'
                           : 'w-1/4 sm:w-auto sm:max-w-sm sm:flex-1 sm:px-6',
-                        'rounded-xl transition-colors duration-200',
+                        'rounded-3xl transition-colors duration-200',
+                        'border-b-10',
                         'hover:cursor-pointer',
                         colorScheme === 'secondary' &&
                           'bg-(--secondary-color)/90 text-(--background-color)',
@@ -355,7 +356,8 @@ const TrainingActionBar: React.FC<ITopBarProps> = ({
                           size={24}
                           className={cn(
                             iconClassName,
-                            'fill-current text-(--main-color)',
+                            id === 'classic' && 'animate-bounce',
+                            'text-(--main-color)',
                           )}
                         />
                       </div>
